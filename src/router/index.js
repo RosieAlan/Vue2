@@ -89,6 +89,18 @@ export const constantRoutes = [
       }
     ]
   },
+  {
+    path: '/formCreate',
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        name: 'Formcreate',
+        component: () => import('@/views/formCreate/index'),
+        meta: { title: 'Formcreate', icon: 'form' }
+      }
+    ]
+  },
 
   {
     path: '/nested',
