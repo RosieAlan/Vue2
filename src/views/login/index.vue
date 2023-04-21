@@ -109,8 +109,7 @@ export default {
       this.$refs.loginForm.validate(valid => {
         if (valid) {
           this.loading = true
-          this.$store.dispatch('user/login', this.loginForm).then(() => {
-            this.$router.push({ path: this.redirect || '/' })
+          this.$store.dispatch('http://127.0.0.1:4523/m1/2480159-0-default/get').then(() => {
             this.loading = false
           }).catch(() => {
             this.loading = false
